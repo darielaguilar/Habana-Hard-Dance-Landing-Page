@@ -5,6 +5,7 @@ import {useEffect, useState} from 'react';
 import Header from './components/Header';
 import TextContainer from './components/TextContainer';
 import Footer from './components/Footer';
+import ContactItem from './components/ContactItem';
 
 
 function App() {
@@ -25,15 +26,17 @@ function App() {
   "Urna id volutpat lacus laoreet non curabitur gravida. Vitae sapien pellentesque habitant morbi tristique. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Ipsum faucibus vitae aliquet nec ullamcorper. Dui accumsan sit amet nulla facilisi morbi. Sit amet consectetur adipiscing elit ut aliquam purus. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Morbi enim nunc faucibus a pellentesque. Velit euismod in pellentesque massa placerat. Diam phasellus vestibulum lorem sed risus ultricies tristique. Quis hendrerit dolor magna eget est lorem ipsum dolor. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Viverra suspendisse potenti nullam ac tortor vitae. Nulla facilisi morbi tempus iaculis."
   return (
     
-    <div class="flex flex-col ">
+    <div class="flex flex-col bg-slate-300">
       <Header >
-        <h1 class="font-sans text-2xl tracking-wide font-bold text-center align-middle my-12">Aqui vamos a construir el header</h1>
+        <h1 class="font-sans text-white text-2xl tracking-wide font-bold text-center align-middle my-12">Habana Hard Dance</h1>
       </Header>
       
       <TextContainer text={text1 }/>
       <TextContainer text={text2}/>
       <Footer>
-        <Checkbox/>
+        
+        <ContactItem />
+        
       </Footer>
       
     </div>
